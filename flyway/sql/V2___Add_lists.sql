@@ -1,1 +1,0 @@
-INSERT INTO shopping_lists (name) VALUES ("Deno");

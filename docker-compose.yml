@@ -1,12 +1,12 @@
 version: "3.4"
 
 services:
-  shopping-lists:
-    build: shopping-lists
-    image: shopping-lists
+  store-pages:
+    build: store-pages
+    image: store-pages
     restart: unless-stopped
     volumes:
-      - ./shopping-lists/:/app
+      - ./store-pages/:/app
     ports:
       - 7777:7777
     depends_on:
@@ -38,6 +38,6 @@ services:
     image: e2e-playwright
     network_mode: host
     depends_on:
-      - shopping-lists
+      - store-pages
     volumes:
       - ./e2e-playwright/tests:/e2e-playwright/tests

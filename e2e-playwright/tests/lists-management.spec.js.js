@@ -21,3 +21,15 @@ test("Can open a list page.", async ({ page }) => {
   await page.locator(`a >> text='${listName}'`).click();
   await expect(page.locator("h1")).toHaveText(listName);
 });
+
+test("Can create a list item.", async ({ page }) => {
+  await page.goto("/lists");
+  const listName = `My list: ${Math.random()}`;
+  await page.locator("input[type=text]").type(listName);
+  await page.locator("input[type=submit]").click();
+  await page.locator(`a >> text='${listName}'`).click();
+  const listItem = `My item: ${Math.random()}`;
+  await page.locator("input[type=text]").type(listItem);
+  await page.locator("input[type=submit]").click();
+  await expect(page.locator(`li >> text='${listName}'`)).toHaveText(listName);
+});

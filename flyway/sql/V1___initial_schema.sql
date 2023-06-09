@@ -1,12 +1,12 @@
-CREATE TABLE shopping_lists (
+CREATE TABLE store_pages (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   active BOOLEAN DEFAULT TRUE
 );
 
-CREATE TABLE shopping_list_items (
+CREATE TABLE store_page_items (
   id SERIAL PRIMARY KEY,
-  shopping_list_id INTEGER REFERENCES shopping_lists(id),
+  store_page_id INTEGER REFERENCES store_pages(id),
   name TEXT NOT NULL,
   collected BOOLEAN DEFAULT FALSE
 );
