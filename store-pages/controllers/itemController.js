@@ -31,7 +31,7 @@ const collectItem = async (request) => {
     return requestUtils.redirectTo(`/pages/${ pageId }`);
 };
 
-const viewListItems = async (request) => {
+const viewPageItems = async (request) => {
     const url = new URL(request.url);
     const urlParts = url.pathname.split("/");
     const pageId = urlParts[2];
@@ -47,4 +47,4 @@ const viewListItems = async (request) => {
     return new Response(await renderFile("page.eta", data), responseDetails);
 };
 
-export { addItem, collectItem, viewListItems };
+export { addItem, collectItem, viewPageItems };

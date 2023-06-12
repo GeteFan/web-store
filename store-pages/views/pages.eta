@@ -2,7 +2,7 @@
 
 <h3><a href="/"> <-Main page</a></h3>
 
-<h2>Add a list</h2>
+<h2>Add a page</h2>
 
 <form method="POST">
   Name: <input type="text" name="name" />
