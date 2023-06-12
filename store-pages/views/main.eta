@@ -1,16 +1,16 @@
 <% layout("./layouts/layout.eta") %>
-<h2>Shared shopping lists</h2>
+<h2>Store pages</h2>
 
-<a href="/lists">Lists</a>
+<a href="/pages">Pages</a>
 
 <ul>
   <li> 
-    <%= it.shopping_lists %>
+    <%= it.store_pages %>
   </li>
 
-  <% if(it.list_items != 0 ) { %>
+  <% if(it.page_items != 0 ) { %>
     <li> 
-      <%= it.list_items %>
+      <%= it.page_items %>
     </li>
   <% }; %>
 </ul>

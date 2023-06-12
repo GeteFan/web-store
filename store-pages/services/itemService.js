@@ -1,20 +1,20 @@
 import { executeQuery } from "../database/database.js";
 
-const create = async (name, shoppingListId) => {
+const create = async (name, storePageId) => {
   await executeQuery(
-    "INSERT INTO store_page_items (name, store_page_id) VALUES ($name , $shoppingListId);",
-    {name: name, shoppingListId: shoppingListId},
+    "INSERT INTO store_page_items (name, store_page_id) VALUES ($name , $storePageId);",
+    {name: name, storePageId: storePageId},
   );
 };
 
-const findAllItems = async (shoppingListId) => {
-    const notCollected = await executeQuery("SELECT * FROM store_page_items WHERE collected = false AND store_page_id = $shoppingListId ORDER BY name ASC;",
-    {shoppingListId: shoppingListId},
+const findAllItems = async (storePageId) => {
+    const notCollected = await executeQuery("SELECT * FROM store_page_items WHERE collected = false AND store_page_id = $storePageId ORDER BY name ASC;",
+    {storePageId: storePageId},
     );
-    const collected = await executeQuery("SELECT * FROM store_page_items WHERE collected = true AND store_page_id = $shoppingListId ORDER BY name ASC;",
-    {shoppingListId: shoppingListId},
+    const collected = await executeQuery("SELECT * FROM store_page_items WHERE collected = true AND store_page_id = $storePageId ORDER BY name ASC;",
+    {storePageId: storePageId},
     );
-    return { listId: shoppingListId, nonCollected: notCollected, collected: collected };
+    return { pageId: storePageId, nonCollected: notCollected, collected: collected };
 };
 
 const countAllItems = async () => {
@@ -23,7 +23,7 @@ const countAllItems = async () => {
     if (result == undefined || result < 1) {
       return 0;
     } else {
-      return `Shopping lists: ${result}`;
+      return `Store pages: ${result}`;
     }
 }
 

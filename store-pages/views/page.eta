@@ -1,12 +1,12 @@
 <% layout("./layouts/layout.eta") %>
 
-<h4><a href="/lists"> <-Shopping lists</a></h3>
+<h4><a href="/pages"> <-Store pages</a></h3>
 
 <h1><%= it.list_name.rows[0].name %></h1>
 
 <h2>Add an item</h2>
 
-<form method="POST" action="/lists/<%= it.list_items.listId %>/items">
+<form method="POST" action="/pages/<%= it.page_items.pageId %>/items">
   Name: <input type="text" name="name" />
   <input type="submit" value="Add item!" />
 </form>
@@ -14,17 +14,17 @@
 <h2>Non collected items</h2>
 
 <ul>
-<% it.list_items.nonCollected.rows.forEach((item) => { %>
+<% it.page_items.nonCollected.rows.forEach((item) => { %>
   <li>
   <%= item.name %>
 
-  <form method="POST" action="/lists/<%= item.shopping_list_id %>/<%= item.id %>/collect">
+  <form method="POST" action="/pages/<%= item.store_page_id %>/<%= item.id %>/collect">
     <input type="submit" value="Mark collected!" />
   </form>
 
   </li>
 <% }); %>
-<% it.list_items.collected.rows.forEach((item) => { %>
+<% it.page_items.collected.rows.forEach((item) => { %>
   <li>
     <del><%= item.name %></del>
   </li>

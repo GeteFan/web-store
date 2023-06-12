@@ -6,23 +6,23 @@ const create = async (name) => {
   );
 };
 
-const deactivateList = async (id) => {
+const deactivatePage = async (id) => {
   await executeQuery("UPDATE store_pages SET active = false WHERE id = $id;",
   {id: id},
   );
 };
 
-const getListName = async (id) => {
+const getPageName = async (id) => {
   return await executeQuery("SELECT name FROM store_pages WHERE id = $id;",
   {id: id},
   );
 };
 
-const findAllActiveLists = async () => {
+const findAllActivePages = async () => {
   return await executeQuery("SELECT * FROM store_pages WHERE active = true;");
 };
 
-const countAllLists = async () => {
+const countAllPages = async () => {
   const number = await executeQuery("SELECT COUNT(*) FROM store_pages;");
   const result = parseInt(number.rows[0].count);
   if (result == undefined || result < 1) {
@@ -32,4 +32,4 @@ const countAllLists = async () => {
   }
 }
 
-export { create, deactivateList, findAllActiveLists, getListName, countAllLists }; 
+export { create, deactivatePage, findAllActivePages, getPageName, countAllPages }; 
