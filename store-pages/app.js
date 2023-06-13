@@ -2,10 +2,11 @@ import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
-import { Application, send, oak } from 'https://deno.land/x/oak/mod.ts';
+import { Application, send, Router, oakCors } from 'https://deno.land/x/oak/mod.ts';
 
 const app = new Application();
-const { statics } = oak;
+const router = new Router();
+
 
 configure({
   views: `${Deno.cwd()}/views/`,
@@ -21,6 +22,8 @@ app.use(async (ctx, next) => {
   });
   await next();
 });
+
+app.use(oakCors());
 
 const handleRequest = async (request) => {
   const url = new URL(request.url);
