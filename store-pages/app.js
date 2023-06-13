@@ -32,9 +32,7 @@ app.use(async (context) => {
 app.use(async (context) => {
   const url = new URL(context.request.url);
   
-  if (url.pathname === "/" && context.request.method === "GET") {
-    return await mainController.viewMain(context);
-  } else if (url.pathname === "/pages" && context.request.method === "POST") {
+  if (url.pathname === "/pages" && context.request.method === "POST") {
     return await pageController.addPage(context);
   } else if (url.pathname === "/pages" && context.request.method === "GET") {
     return await pageController.viewPages(context);
