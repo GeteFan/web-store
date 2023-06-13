@@ -3,7 +3,7 @@ import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
 import * as mainController from "./controllers/mainController.js";
-import './styles.css'
+import './views/layouts/layout-styles.css'
 
 configure({
   views: `${Deno.cwd()}/views/`,
