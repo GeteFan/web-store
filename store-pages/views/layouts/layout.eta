@@ -9,8 +9,7 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <div class="container paper">
-
+    
     <header id="header">
         <div id="top">Enjoy free shipping on orders over $19.99</div>
         <div class="wrap">
@@ -37,6 +36,5 @@
     </header>
 
       <%~ it.body %>
-    </div>
   </body>
 </html>
