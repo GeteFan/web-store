@@ -12,6 +12,16 @@ const app = new Application();
 const port = 7777;
 
 // Serve static files
+app.use(async (context, next) => {
+  if (context.request.method === "GET") {
+    const url = new URL(context.request.url);
+    if (url.pathname === "/") {
+      return await mainController.viewMain(context);
+    }
+  }
+  await next();
+});
+
 app.use(async (context) => {
   await send(context, context.request.url.pathname, {
     root: `${Deno.cwd()}/styles`,
