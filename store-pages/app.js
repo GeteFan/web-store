@@ -12,20 +12,10 @@ const app = new Application();
 const port = 7777;
 
 // Serve static files
-app.use(async (context, next) => {
-  await mainController.viewMain(context);
-  if (context.request.method === "GET") {
-    const url = new URL(context.request.url);
-    if (url.pathname === "/") {
-      return await mainController.viewMain(context);
-    }
-  }
-  await next();
-});
-
 app.use(async (context) => {
   await send(context, context.request.url.pathname, {
     root: `${Deno.cwd()}/styles`,
+    index: "/views/layouts/layout.eta",
   });
 });
 
@@ -33,7 +23,9 @@ app.use(async (context) => {
 app.use(async (context) => {
   const url = new URL(context.request.url);
   
-  if (url.pathname === "/pages" && context.request.method === "POST") {
+  if (url.pathname === "/" && context.request.method === "GET") {
+    return await mainController.viewMain(context);
+  } else if (url.pathname === "/pages" && context.request.method === "POST") {
     return await pageController.addPage(context);
   } else if (url.pathname === "/pages" && context.request.method === "GET") {
     return await pageController.viewPages(context);
