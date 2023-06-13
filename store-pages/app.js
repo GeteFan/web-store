@@ -2,14 +2,17 @@ import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
-import { Application, send, static } from 'https://deno.land/x/oak/mod.ts';
+import { Application, send, oak } from 'https://deno.land/x/oak/mod.ts';
+
+const app = new Application();
+const { statics } = oak;
 
 configure({
   views: `${Deno.cwd()}/views/`,
 });
 
 // Add the static files middleware
-app.use(static('/styles'));
+app.use(statics('/styles'));
 
 // Serve static files (including CSS)
 app.use(async (ctx, next) => {
