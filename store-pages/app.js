@@ -2,11 +2,21 @@ import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
-import * as mainController from "./controllers/mainController.js";
-import './views/layouts/layout-styles.css'
+import { Application, send, static } from 'https://deno.land/x/oak/mod.ts';
 
 configure({
   views: `${Deno.cwd()}/views/`,
+});
+
+// Add the static files middleware
+app.use(static('/styles'));
+
+// Serve static files (including CSS)
+app.use(async (ctx, next) => {
+  await send(ctx, ctx.request.url.pathname, {
+    root: `${Deno.cwd()}/views/layouts/styles`, // Path to the directory containing your static files
+  });
+  await next();
 });
 
 const handleRequest = async (request) => {
