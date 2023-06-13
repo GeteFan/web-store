@@ -15,7 +15,6 @@ const port = 7777;
 app.use(async (context) => {
   await send(context, context.request.url.pathname, {
     root: `${Deno.cwd()}/styles`,
-    index: "/views/layouts/layout.eta",
   });
 });
 
