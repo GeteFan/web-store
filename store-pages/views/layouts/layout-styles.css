@@ -1,5 +1,5 @@
 
-*{ background-color: black;}
+* { background-color: black;}
 
 #header {
     width: 100%;
@@ -23,14 +23,10 @@ header {
     margin-bottom: 20px;
 }
 
-div, form, img, ul, ol, li, dl, dt, dd, p {
-    border: 0px;
-    margin: 0;
-    padding: 0;
-}
-
 div {
     display: block;
+    color: aqua;
+    margin: 1000px;
 }
 
 .wrap {
