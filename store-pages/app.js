@@ -1,13 +1,11 @@
 import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
-
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
 
 configure({
   views: `${Deno.cwd()}/views/`,
 });
-
 
 const handleRequest = async (request) => {
   const url = new URL(request.url);
@@ -32,24 +30,4 @@ const handleRequest = async (request) => {
   }
 };
 
-const server = serve({ port: 7777 });
-
-// Serve static files (including CSS)
-for await (const request of server) {
-  if (request.method === "GET") {
-    const staticPath = `${Deno.cwd()}/styles${request.url.pathname}`;
-    try {
-      const file = await Deno.open(staticPath);
-      request.respond({ body: file });
-      file.close();
-    } catch (error) {
-      if (error instanceof Deno.errors.NotFound) {
-        await handleRequest(request);
-      } else {
-        request.respond({ status: 500 });
-      }
-    }
-  } else {
-    await handleRequest(request);
-  }
-}
+serve(handleRequest, { port: 7777 });
