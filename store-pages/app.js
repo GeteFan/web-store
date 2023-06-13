@@ -1,5 +1,5 @@
-import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
-import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
+import { Application, send } from "https://deno.land/x/oak/mod.ts";
+import { configure, renderFile } from "https://deno.land/x/eta/mod.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
 import * as mainController from "./controllers/mainController.js";
@@ -8,27 +8,52 @@ configure({
   views: `${Deno.cwd()}/views/`,
 });
 
-const handleRequest = async (request) => {
-  const url = new URL(request.url);
+const app = new Application();
+const port = 7777;
 
-  if (url.pathname === "/" && request.method === "GET") {
-    return await mainController.viewMain(request);
-  } else if (url.pathname === "/pages" && request.method === "POST") {
-    return await pageController.addPage(request);
-  } else if (url.pathname === "/pages" && request.method === "GET") {
-    return await pageController.viewPages(request);
-  } else if (url.pathname.match("pages/[0-9]+/deactivate") && request.method === "POST") {
-    return await pageController.deactivatePage(request);
-  } else if (url.pathname.match("pages/[0-9]+") && request.method === "GET") {
-    return await itemController.viewPageItems(request);
-  } else if (url.pathname.match("pages/[0-9]+/items" ) && request.method === "POST") {
-    return await itemController.addItem(request);
-  } else if (url.pathname.match("pages/[0-9]+/[0-9]+/collect") && request.method === "POST") {
+// Serve static files
+app.use(async (context) => {
+  await send(context, context.request.url.pathname, {
+    root: `${Deno.cwd()}/styles`,
+  });
+});
+
+// Define routes
+app.use(async (context) => {
+  const url = new URL(context.request.url);
+  
+  if (url.pathname === "/" && context.request.method === "GET") {
+    return await mainController.viewMain(context);
+  } else if (url.pathname === "/pages" && context.request.method === "POST") {
+    return await pageController.addPage(context);
+  } else if (url.pathname === "/pages" && context.request.method === "GET") {
+    return await pageController.viewPages(context);
+  } else if (
+    url.pathname.match("pages/[0-9]+/deactivate") &&
+    context.request.method === "POST"
+  ) {
+    return await pageController.deactivatePage(context);
+  } else if (url.pathname.match("pages/[0-9]+") && context.request.method === "GET") {
+    return await itemController.viewPageItems(context);
+  } else if (
+    url.pathname.match("pages/[0-9]+/items") &&
+    context.request.method === "POST"
+  ) {
+    return await itemController.addItem(context);
+  } else if (
+    url.pathname.match("pages/[0-9]+/[0-9]+/collect") &&
+    context.request.method === "POST"
+  ) {
     console.log("collect");
-    return await itemController.collectItem(request);
+    return await itemController.collectItem(context);
   } else {
-    return new Response("Not found", { status: 404 });
+    context.response.status = 404;
+    context.response.body = "Not found";
   }
-};
+});
 
-serve(handleRequest, { port: 7777 });
+// Start the server
+app.addEventListener("listen", () => {
+  console.log(`Server is running on port ${port}`);
+});
+await app.listen({ port });
