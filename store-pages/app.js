@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
-import { serveStatic } from "https://deno.land/std/http/file_server.ts";
+
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
 
@@ -37,7 +37,7 @@ const server = serve({ port: 7777 });
 // Serve static files (including CSS)
 for await (const request of server) {
   if (request.method === "GET") {
-    const staticPath = `${Deno.cwd()}/public${request.url.pathname}`;
+    const staticPath = `${Deno.cwd()}/styles${request.url.pathname}`;
     try {
       const file = await Deno.open(staticPath);
       request.respond({ body: file });
