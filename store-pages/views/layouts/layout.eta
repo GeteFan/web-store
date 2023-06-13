@@ -22,7 +22,7 @@
             <div id="currency"><p><img src="/StaticRes/ColorImg/usd.png">USD ($)</p><ul><li><a href="/currency/change/2"><img src="/StaticRes/ColorImg/eur.png">EUR (€)</a></li><li><a href="/currency/change/4"><img src="/StaticRes/ColorImg/gbp.png">GBP (￡)</a></li><li><a href="/currency/change/6"><img src="/StaticRes/ColorImg/AUD.png">AUD (AU$)</a></li><li><a href="/currency/change/7"><img src="/StaticRes/ColorImg/CAD.png">CAD (CA$)</a></li><li><a href="/currency/change/8"><img src="/StaticRes/ColorImg/SGD.png">SGD (S$)</a></li><li><a href="/currency/change/9"><img src="/StaticRes/ColorImg/NZD.png">NZD (NZ$)</a></li></ul></div>
             <button id="search_btn"></button>
             <a id="cart_btn" href="/ShoppingCart/List" rel="nofollow" class="sys_cart"><b class="cart_0">0</b>
-</a>
+            </a>
             <a href="/UserCenter/Address/list" rel="nofollow" id="user_btn"></a>
         </div>
         <nav id="leftMenu">
