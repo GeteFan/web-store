@@ -1,29 +1,13 @@
 import { serve } from "https://deno.land/std@0.171.0/http/server.ts";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
+import { serveStatic } from "https://deno.land/std/http/file_server.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
-import { Application, send, Router, oakCors } from 'https://deno.land/x/oak/mod.ts';
-
-const app = new Application();
-const router = new Router();
-
 
 configure({
   views: `${Deno.cwd()}/views/`,
 });
 
-// Add the static files middleware
-app.use(statics('/styles'));
-
-// Serve static files (including CSS)
-app.use(async (ctx, next) => {
-  await send(ctx, ctx.request.url.pathname, {
-    root: `${Deno.cwd()}/views/layouts/styles`, // Path to the directory containing your static files
-  });
-  await next();
-});
-
-app.use(oakCors());
 
 const handleRequest = async (request) => {
   const url = new URL(request.url);
@@ -48,4 +32,24 @@ const handleRequest = async (request) => {
   }
 };
 
-serve(handleRequest, { port: 7777 });
+const server = serve({ port: 7777 });
+
+// Serve static files (including CSS)
+for await (const request of server) {
+  if (request.method === "GET") {
+    const staticPath = `${Deno.cwd()}/public${request.url.pathname}`;
+    try {
+      const file = await Deno.open(staticPath);
+      request.respond({ body: file });
+      file.close();
+    } catch (error) {
+      if (error instanceof Deno.errors.NotFound) {
+        await handleRequest(request);
+      } else {
+        request.respond({ status: 500 });
+      }
+    }
+  } else {
+    await handleRequest(request);
+  }
+}
