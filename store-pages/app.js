@@ -14,8 +14,8 @@ const port = 7777;
 // Serve static files
 app.use(async (context) => {
   await send(context, context.request.url.pathname, {
-    root: `${Deno.cwd()}/styles`,
-    index: "lol.eta",
+    root: `${Deno.cwd()}/views`,
+    index: "layouts/layout.eta",
   });
 });
 
