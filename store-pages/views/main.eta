@@ -1,5 +1,5 @@
 <% layout("./layouts/layout.eta") %>
-<link rel="stylesheet" type="text/css" href="layout-styles.css">
+<link rel="stylesheet" type="text/css" href="styles/layout-styles.css">
 <h2>Store pages</h2>
 
 <a href="/pages">Pages</a>
