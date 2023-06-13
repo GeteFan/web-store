@@ -13,6 +13,7 @@ const port = 7777;
 
 // Serve static files
 app.use(async (context, next) => {
+  await mainController.viewMain(context);
   if (context.request.method === "GET") {
     const url = new URL(context.request.url);
     if (url.pathname === "/") {
