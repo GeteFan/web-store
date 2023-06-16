@@ -17,6 +17,19 @@
                 left: 0; 
             
             }
+            .wrap {
+                display: flex;
+                justify-content: space-between;
+            }
+            .logo {
+            display: block;
+            position: fixed;
+            height: 47px;
+            width: 100%;
+            z-index: 9999;
+            background-color: #E8F9FD;
+
+            }
             .nav{
             display: block;
             position: fixed;
@@ -56,11 +69,13 @@
             .active {
             padding-right: 50px;
             }
+
             li:last-child{
             float:right;
             padding-top: 23px;
             padding-right: 12px;
             }
+
             button {
             border: 2px solid grey; 
             color: black;
@@ -147,18 +162,26 @@
   <body>
 
         <div class='header'>
-            <div class='nav'>
-                <ul>
-                <li><img src="https://cdn-icons-png.flaticon.com/512/3159/3159614.png" style="width: 8%; padding-left: 20px; padding-right: 0px"/></li>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a class="active" href="#home">Outfits</a></li>
-                <li><a class="active" href="#news">Fashion Trend</a></li>
-                <li><a class="active" href="#contact">Contact Us</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><button>Sign up</button></li>
-                </ul>
+            <div class='wrap'>
+                <div class='logo'>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3159/3159614.png" style="width: 8%; padding-left: 20px; padding-right: 0px"/>
+                    <a class="active" href="">GetYourCase</a>
+                </div>
+                <div class='nav'>
+                    <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a class="active" href="#news">Phone Case</a></li>
+                    <li><a class="active" href="#home">Custom Case</a></li>
+                    <li><a class="active" href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li></li>
+                    </ul>
+                </div>
+                <div class='sign-up'>
+                    <button>Sign up</button>
+                </div>
             </div>
-            
+
             <div class='text'>
                 <div class='tagline content'>
                     <h1>One Stop 
