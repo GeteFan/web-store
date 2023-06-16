@@ -8,126 +8,135 @@
     <meta charset="utf-8">
 
     <style>
-            #header {
-                width: 100%;
-                height: 100px;
-                position: relative;
-                z-index: 2;
-                border-bottom: 1px solid #eee;
-            }
-
-            header {
-                display: block;
-            }
-
-            #top {
-                width: 100%;
-                background-color: #24c985;
-                color: #fff;
-                text-align: center;
-                font-size: 14px;
-                line-height: 2;
-                margin-bottom: 20px;
-            }
-
-            div {
-                display: block;
-            }
-
-            .wrap {
-                margin: 0 auto;
-                width: 1100px;
-            }
-
-            #logo {
-                position: absolute;
-                margin: 0 0 0 40px;
-                left: 10vw;
-            }
-
-            #showMenu {
-                position: absolute;
-                left: 10vw;
-                line-height: 1;
-                cursor: pointer;
-                border-top: 1px solid #525e6e;
-                border-bottom: 1px solid #525e6e;
-                display: inline-block;
-                width: 26px;
-                height: 20px;
-                transition: all .3s;
-                border-left: 0;
-                border-right: 0;
-                background-color: transparent;
-            }
-
-            #showMenu:after {
-                display: block;
-                border-top: 1px solid #525e6e;
-                transition: all .3s;
-                content: "";
-            }
-
-            #menu {
-                float: left;
-                margin: -12px 0 0;
-                font-weight: bold;
-                width: 100%;
-                text-align: center;
-            }
-
-            #menu>ul >li {
-                display: inline-block;
-                padding: 22px 24px 24px;
-                line-height: 1;
-                position: relative;
-                z-index: 990;
-            }
+            .header{
+            background-color: #C1EFFF;
+            width: 100%; 
+                height: 1000px;; 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
             
-            #top_button {
-                position: absolute;
-                top: 30px;
-                right: 0px;
-                background-color: #fff;
-                padding: 15px;
-                z-index: 999;
+            }
+            .nav{
+            display: block;
+            position: fixed;
+            height: 47px;
+            width: 100%;
+            z-index: 9999;
+            background-color: #E8F9FD;
+
+            }
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+            }
+            li {
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
             }
 
-            #search_btn, #cart_btn, #user_btn {
-                float: left;
-                width: 30px;
-                height: 30px;
-                margin-left: 10px;
-                cursor: pointer;
+
+            li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
             }
 
-            #leftMenu {
-                position: fixed;
-                left: 0;
-                top: 0;
-                z-index: 99999;
-                font-size: 16px;
-                bottom: 0;
-                width: 0;
+            li a:hover {
+            background-color: #F1F1F1;
+            text-decoration: underline;
             }
 
-            #leftMenu>div>ul {
-                overflow-x: hidden;
-                overflow-y: auto;
-                transition: all .3s;
-                position: relative;
-                height: calc(100% - 44px);
+            .active {
+            padding-right: 50px;
             }
-
-            input, button, select, textarea {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                border-radius: 0;
-                padding: 0;
+            li:last-child{
+            float:right;
+            padding-top: 23px;
+            padding-right: 12px;
+            }
+            button {
+            border: 2px solid grey; 
+            color: black;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
                 margin: 0;
-                text-indent: 0;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            
             }
+
+            button:hover{
+            border: 2px solid white; 
+            background-color:black;
+            color: white;
+                border: black;
+            
+            }
+
+            .tagline{
+            padding-top: 40px;
+                padding-left: 100px;
+            font-size: 35px;
+            width: 600px;
+            float:left;
+            }
+
+            .desc{
+            width: 600px;
+            float: left;
+            padding-left: 100px;
+            font: 15px "Fira Sans", sans-serif;
+            }
+            .content{
+            display: inline;
+            }
+            .fa {
+            padding: 10px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            width: 10px;
+            height: 10px;
+            text-decoration: none;
+            margin: 60px 5px;
+            border-radius: 50%;
+            float:right;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+            .fa-youtube {
+            background: #bb0000;
+            color: white;
+            }
+
+            .fa-instagram {
+            background: #125688;
+            color: white;
+            }
+
     </style>
   </head>
   <body>
@@ -141,6 +150,7 @@
                 <li><a class="active" href="#news">Fashion Trend</a></li>
                 <li><a class="active" href="#contact">Contact Us</a></li>
                 <li><a href="#about">About Us</a></li>
+                <li><button>Sign up</button></li>
                 </ul>
             </div>
             
