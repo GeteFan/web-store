@@ -99,6 +99,11 @@
             padding-left: 100px;
             font: 15px "Fira Sans", sans-serif;
             }
+            .image{
+            width: 300px;
+            margin-left: 100px;
+            margin-top: 90px;
+            }
             .content{
             display: inline;
             }
