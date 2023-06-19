@@ -22,7 +22,7 @@ const handleRequest = async (request) => {
   } else if (url.pathname === "/customCase" && request.method === "GET") {
     return await customCaseController.viewCustomCase(request);
   } else if (url.pathname === "/contactUs" && request.method === "GET") {
-    return await contactUsController.viewAboutUs(request);
+    return await contactUsController.viewContactUs(request);
   } else if (url.pathname === "/aboutUs" && request.method === "GET") {
     return await aboutUsController.viewAboutUs(request);
   } else if (url.pathname === "/pages" && request.method === "POST") {

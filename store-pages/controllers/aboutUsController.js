@@ -9,7 +9,7 @@ const viewAboutUs = async (request) => {
     const data = {
     };
   
-    return new Response(await renderFile("AboutUs.eta", data), responseDetails);
+    return new Response(await renderFile("aboutUs.eta", data), responseDetails);
 };
 
 export { viewAboutUs };

@@ -1,3 +1,5 @@
+<% layout("./layouts/layout.eta") %>
+
 <div class="phone-case-page-main-cotact">     
     <div style="width:660px;margin:20px auto">
         <div>
