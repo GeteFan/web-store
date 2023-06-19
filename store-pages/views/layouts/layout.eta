@@ -84,7 +84,7 @@
             }
 
             .active {
-            padding-right: 50px;
+            margin-right: 50px;
             }
 
             li:last-child{
@@ -618,11 +618,11 @@ font-weight: bold;
                 </div>
                 <div class='nav'>
                     <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a class="active" href="#phone-case">Phone Case</a></li>
-                    <li><a class="active" href="#custome-case">Custom Case</a></li>
-                    <li><a class="active" href="#contact-us">Contact Us</a></li>
-                    <li><a href="#about-us">About Us</a></li>
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a href="/phoneCase">Phone Case</a></li>
+                    <li><a href="/customCase">Custom Case</a></li>
+                    <li><a href="/contactUs">Contact Us</a></li>
+                    <li><a href="/aboutUs">About Us</a></li>
                     <li></li>
                     </ul>
                 </div>

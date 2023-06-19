@@ -3,6 +3,10 @@ import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
 import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
 import * as mainController from "./controllers/mainController.js";
+import * as phoneCaseController from "./controllers/phoneCaseController.js";
+import * as customCaseController from "./controllers/customCaseController.js";
+import * as contactUsController from "./controllers/contactUsController.js";
+import * as aboutUsController from "./controllers/aboutUsController.js";
 
 configure({
   views: `${Deno.cwd()}/views/`,
@@ -13,6 +17,14 @@ const handleRequest = async (request) => {
 
   if (url.pathname === "/" && request.method === "GET") {
     return await mainController.viewMain(request);
+  } else if (url.pathname === "/phoneCase" && request.method === "GET") {
+    return await phoneCaseController.viewPhoneCase(request);
+  } else if (url.pathname === "/customCase" && request.method === "GET") {
+    return await customCaseController.viewCustomCase(request);
+  } else if (url.pathname === "/contactUs" && request.method === "GET") {
+    return await contactUsController.viewAboutUs(request);
+  } else if (url.pathname === "/aboutUs" && request.method === "GET") {
+    return await aboutUsController.viewAboutUs(request);
   } else if (url.pathname === "/pages" && request.method === "POST") {
     return await pageController.addPage(request);
   } else if (url.pathname === "/pages" && request.method === "GET") {
