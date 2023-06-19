@@ -2,7 +2,7 @@
 
     <div class="phone-case-page-main-phone">
 		<div class="list-of-models">
-			<ul class="list-of-models-ul"><li class="sltli"><a href="https://www.styletify.com/phone-case-c-48/">Phone Case</a><i></i>
+			<ul class="list-of-models-ul"><li class="sltli"><a href="/phoneCase">Phone Case</a><i></i>
 			<ul class="list-of-models-ul2">
 				<li><a href="">Collection</a></li>
 				<li><a href="">iPod touch Cases</a></li>
@@ -323,10 +323,10 @@
             			<div class="breadcrumb1">
 				<ul class="breadcrumb-ul">
 					<li typeof="v:Breadcrumb">
-					<a property="v:title" rel="v:url" title="HOME" href="https://www.styletify.com">HOME</a>::
+					<a property="v:title" rel="v:url" title="HOME" href="/">HOME</a>::
 					</li>
 					<li typeof="v:Breadcrumb">
-					<a property="v:title" rel="v:url" title="Phone Case" href="https://www.styletify.com/phone-case-c-48/">PhoneCase</a>
+					<a property="v:title" rel="v:url" title="Phone Case" href="/phoneCase">PhoneCase</a>
 					</li>
 				</ul>
 				</div>
@@ -334,51 +334,45 @@
         		</div>
 			<ul id="plist">
             
-            <li><a href="" id="pro_2367"><img src="https://i.postimg.cc/mr6PhNhF/phone-Case1-1.jpg" alt="Custom Photo Sticker Phone Case,Remove Background from Image"></a><a href="">Custom Photo Sticker Phone Case,Remove Background from Image</a>$26.99
+            <li><a href="" id="pro_2805"><img src="https://i.postimg.cc/7ZnPJ1tZ/phone-Case-1.jpg" alt="Custom for Galaxy S22 5G Shockproof Case"></a><a href="">Custom for Galaxy S22 5G Shockproof Case</a>$49.99
             <script>
-                pimgs(2367,[])
+                pimgs(2805,[])
             </script>
             </li>
             
-            <li><a href="" id="pro_1916"><img src="https://i.postimg.cc/W1Nznfkk/phone-Case1-2.jpg" alt="Custom Spotify Code Phone Case"></a><a href="">Custom Spotify Code Phone Case</a>$9.99
+            <li><a href="" id="pro_2804"><img src="https://i.postimg.cc/9Mrck6mD/phone-Case-2.jpg" alt="Custom for Galaxy S22 Plus 5G Shockproof Case"></a><a href="">Custom for Galaxy S22 Plus 5G Shockproof Case</a>$49.99
             <script>
-                pimgs(1916,[])
+                pimgs(2804,[])
             </script>
             </li>
             
-            <li><a href="" id="pro_2426"><img src="https://i.postimg.cc/QCcC62mp/phone-Case1-3.jpg" alt="Custom Galaxy Z Flip3 Case With Ring Leather Protective Case"></a><div><p><img src="" data-src=""><img src="" data-src=""><img src="" data-src=""><img src="" data-src=""></p></div><a href="">Custom Galaxy Z Flip3 Case With Ring Leather Protective Case</a>$32.99
-            </li>
-            
-            <li><a href="" id="pro_2425"><img src="https://i.postimg.cc/vHLD5dcy/phone-Case1-4.jpg" alt="Custom Galaxy Z Flip4 Case With Ring Dual Shock Case"></a><a href="">Custom Galaxy Z Flip4 Case With Ring Dual Shock Case</a>$32.99
+            <li><a href="" id="pro_2800"><img src="https://i.postimg.cc/WbRs9YQ4/phone-Case-3.jpg" alt="Custom for Sony Xperia 1 V Candy Case"></a><a href="">Custom for Sony Xperia 1 V Candy Case</a>$9.99
             <script>
-                pimgs(2425,[])
+                pimgs(2800,[])
             </script>
             </li>
             
-            <li><a href="" id="pro_2424"><img src="https://i.postimg.cc/QCcC62mp/phone-Case1-3.jpg" alt="Custom Galaxy Z Flip4 Case With Ring Leather Protective Case"></a><dwiv><p><img src="" data-src=""><img src="" data-src=""><img src="" data-src=""><img src="" data-src=""></p></dwiv><a href="">Custom Galaxy Z Flip4 Case With Ring Leather Protective Case</a>$32.99
-            </li>
-            
-            <li><a href="" id="pro_2818"><img src="https://i.postimg.cc/wvC3QqXq/phone-Case1-6.jpg" alt="Custom for TCL 40 XE 5G Candy Case"></a><a href="">Custom for TCL 40 XE 5G Candy Case</a>$9.99
+            <li><a href="" id="pro_2799"><img src="https://i.postimg.cc/Px9dnSJ2/phone-Case-4.jpg" alt="Custom for Sony Xperia 10 V Candy Case"></a><a href="">Custom for Sony Xperia 10 V Candy Case</a>$9.99
             <script>
-                pimgs(2818,[])
+                pimgs(2799,[])
             </script>
             </li>
             
-            <li><a href="" id="pro_2809"><img src="https://i.postimg.cc/bYnZNnPs/phone-Case1-7.jpg" alt="Custom for Blackview A52 Candy Case"></a><a href="">Custom for Blackview A52 Candy Case</a>$9.99
+            <li><a href="" id="pro_2798"><img src="https://i.postimg.cc/tChp8tjN/phone-Case-5.jpg" alt="Custom for Google Pixel Fold 3D Matte Case"></a><a href="">Custom for Google Pixel Fold 3D Matte Case</a>$31.99
             <script>
-                pimgs(2809,[])
+                pimgs(2798,[])
             </script>
             </li>
             
-            <li><a href="" id="pro_2808"><img src="https://i.postimg.cc/pXtp9dVk/phone-Case1-8.jpg" alt="Custom for Google Pixel 7A Dual Shock Case"></a><a href="">Custom for Google Pixel 7A Dual Shock Case</a>$32.99
+            <li><a href="" id="pro_2797"><img src="https://i.postimg.cc/L5P29jZR/phone-Case-6.jpg" alt="Custom for Pixel 7A Candy Case"></a><a href="">Custom for Pixel 7A Candy Case</a>$9.99
             <script>
-                pimgs(2808,[])
+                pimgs(2797,[])
             </script>
             </li>
             
-            <li><a href="" id="pro_2807"><img src="https://i.postimg.cc/Px9dnSJ2/phone-Case-4.jpg" alt="Custom for Nokia C02 Candy Case"></a><a href="">Custom for Nokia C02 Candy Case</a>$9.99
+            <li><a href="" id="pro_2796"><img src="https://i.postimg.cc/dQZqjcNX/phone-Case-7.jpg" alt="Custom for Pixel 7A Ultra Candy Case"></a><a href="">Custom for Pixel 7A Ultra Candy Case</a>$26.99
             <script>
-                pimgs(2807,[])
+                pimgs(2796,[])
             </script>
             </li>
             
@@ -387,8 +381,8 @@
         </ul>
 		
 		<div class="turnpage">
-			<span class="currentPageNo">1</span>
-			<a href="/phoneCase2" class="pageNo">2</a>
+			<a href="/phoneCase" class="pageNo">1</a>
+			<span class="currentPageNo">2</span>
 		</div>
 		</div>
 	    </div>

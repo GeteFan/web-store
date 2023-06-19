@@ -741,12 +741,14 @@
                     outline: none;
                     text-decoration: none;
                 }
+
             /* Contact Us page styles*/
+
             .phone-case-page-main-contact {
               	color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 border: 0px;
-                margin: 47px 0;
+                margin: 67px 0;
                 padding: 0;
                 width: 100%;
                 background-color: #fff;
@@ -833,7 +835,7 @@
                 text-align: center;
                 height: 44px;
                 line-height: 44px;
-                padding: 0;
+                padding-top: 10px;
                 border-radius: 22px;
                 font-size: 14px;
                 box-sizing: border-box;

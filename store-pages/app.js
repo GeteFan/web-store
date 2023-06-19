@@ -18,6 +18,8 @@ const handleRequest = async (request) => {
   if (url.pathname === "/" && request.method === "GET") {
     return await mainController.viewMain(request);
   } else if (url.pathname === "/phoneCase" && request.method === "GET") {
+    return await phoneCase2Controller.viewPhoneCase(request);
+  } else if (url.pathname === "/phoneCase2" && request.method === "GET") {
     return await phoneCaseController.viewPhoneCase(request);
   } else if (url.pathname === "/customCase" && request.method === "GET") {
     return await customCaseController.viewCustomCase(request);
