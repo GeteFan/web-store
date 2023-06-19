@@ -1003,7 +1003,7 @@
                     </ul>
                 </div>
                 <div class='sign-up'>
-                    <form method="POST" action="/sign"> 
+                    <form method="GET" action="/sign"> 
                         <button type="submit">Sign up</button>
                     </form>
                 </div>
