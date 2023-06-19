@@ -12,7 +12,17 @@
                 margin: 0;
                 padding: 0;
             }
-
+		::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #E5E5E5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
+::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
             .header{
             background-color: #C1EFFF;
             width: 100%; 
@@ -23,11 +33,12 @@
             
             }
             .wrap {
+		    height: 47px;
             display: flex;
             justify-content: space-between;
               flex-direction: row;
             width:100%;
-            overflow: auto;
+            overflow: hidden;
     
             }
             .logo {
@@ -63,14 +74,14 @@
             overflow: hidden;
             
             }
-            li {
+            .nav ul li {
             float: left;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             }
 
 
-            li a {
+            .nav ul li a {
             display: block;
             color: black;
             text-align: center;
@@ -78,16 +89,12 @@
             text-decoration: none;
             }
 
-            li a:hover {
+            .nav ul li a:hover {
             background-color: #F1F1F1;
             text-decoration: underline;
             }
 
-            .active {
-            margin-right: 50px;
-            }
-
-            li:last-child{
+            .nav ul li:last-child{
             float:right;
             padding-top: 23px;
             padding-right: 12px;
@@ -481,7 +488,7 @@
             /* Custom Case page styles*/
 
             /* Contact Us page styles*/
-            .phone-case-page-main-cotact {
+            .phone-case-page-main-contact {
               	color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 border: 0px;
@@ -491,14 +498,14 @@
                 background-color: #fff;
                 min-height: 400px;
             	}   
-		    div {
+		    .phone-case-page-main-contact div {
                 color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 border: 0px;
                 margin: 0;
                 padding: 0;
                 }
-	        .phone-case-page-main-cotact ul {
+	        .phone-case-page-main-contact ul {
 		        color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 border: 0px;
@@ -512,7 +519,7 @@
                 font-weight: bold;
                 font-size: 24px;
                 }
-		    .phone-case-page-main-cotact ul li {
+		    .phone-case-page-main-contact ul li {
                 color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 list-style: none;
@@ -533,7 +540,7 @@
                 width: 600px;
                 padding: 0 30px 50px;
                 }
-		    input {
+		    .phone-case-page-main-contact ul li input {
                 list-style: none;
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 font-size: 14px;
@@ -585,7 +592,9 @@
                 background-color: #606e82;
                 width: 200px;
                 }         
+
             /* About Us page styles*/
+
             .phone-case-page-main-about {
 		        margin: 87px auto;
               	width: 850px;
@@ -615,7 +624,7 @@
                 </div>
                 <div class='nav'>
                     <ul>
-                    <li><a class="active" href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/phoneCase">Phone Case</a></li>
                     <li><a href="/customCase">Custom Case</a></li>
                     <li><a href="/contactUs">Contact Us</a></li>
