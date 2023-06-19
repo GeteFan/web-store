@@ -3,15 +3,14 @@
 <div class="phone-case-page-main-sign">     
     <div style="width:660px;margin:20px auto">
         <div>
-            <p style="padding:30px" class="b">
-                <span class="fs24">Log In</span><br><br>
+            
+            <div class="fs24">Log In</div>
 
-            </p>
 
-            <form method="post" action="/contactus/submit/" class="validate payform" style="width:600px;padding:0 30px 50px;" novalidate="novalidate">
+            <form method="post" action="/contactus/submit/" class="validate payform" style="width:350px;padding:0 30px 50px;" novalidate="novalidate">
                 <ul>
-                    <li><input class="input-contact" name="contactUs.Name" type="text" required="" placeholder="Login" style="text-align:left;"></li>
-                    <li><input class="input-contact" name="contactUs.Email" type="password" required="" data-rule-email="true" placeholder="Password" style="text-align:left;"></li>
+                    <li><input class="input-sign" name="contactUs.Name" type="text" required="" placeholder="Login" style="text-align:left;"></li>
+                    <li><input class="input-sign" name="contactUs.Email" type="password" required="" data-rule-email="true" placeholder="Password" style="text-align:left;"></li>
                 </ul>
                 <button class="btn_4" type="button" style="width:200px" onclick="check()">Send</button>
             </form>
