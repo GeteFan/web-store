@@ -124,6 +124,7 @@
             
             }
             .sign-up-a {
+                width: 110px;
                 text-decoration: none;
                 padding: 5px 20px;
                 text-wrap: nowrap;
@@ -1002,7 +1003,9 @@
                     </ul>
                 </div>
                 <div class='sign-up'>
-                    <button><a class="sign-up-a" href="/sign" >Sign up</a></button>
+                    <form method="POST" action="/signIn"> 
+                        <button type="submit">Sign up</button>
+                    </form>
                 </div>
             </div>
   
