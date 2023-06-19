@@ -4,6 +4,7 @@ import * as pageController from "./controllers/pageController.js";
 import * as itemController from "./controllers/itemController.js";
 import * as mainController from "./controllers/mainController.js";
 import * as phoneCaseController from "./controllers/phoneCaseController.js";
+import * as phoneCase2Controller from "./controllers/phoneCase2Controller.js";
 import * as customCaseController from "./controllers/customCaseController.js";
 import * as contactUsController from "./controllers/contactUsController.js";
 import * as aboutUsController from "./controllers/aboutUsController.js";
@@ -18,9 +19,9 @@ const handleRequest = async (request) => {
   if (url.pathname === "/" && request.method === "GET") {
     return await mainController.viewMain(request);
   } else if (url.pathname === "/phoneCase" && request.method === "GET") {
-    return await phoneCase2Controller.viewPhoneCase(request);
-  } else if (url.pathname === "/phoneCase2" && request.method === "GET") {
     return await phoneCaseController.viewPhoneCase(request);
+  } else if (url.pathname === "/phoneCase2" && request.method === "GET") {
+    return await phoneCase2Controller.viewPhoneCase(request);
   } else if (url.pathname === "/customCase" && request.method === "GET") {
     return await customCaseController.viewCustomCase(request);
   } else if (url.pathname === "/contactUs" && request.method === "GET") {

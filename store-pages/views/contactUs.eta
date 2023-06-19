@@ -1,6 +1,6 @@
 <% layout("./layouts/layout.eta") %>
 
-<div class="phone-case-page-main-conact">     
+<div class="phone-case-page-main-contact">     
     <div style="width:660px;margin:20px auto">
         <div>
             <p style="padding:30px" class="b">
