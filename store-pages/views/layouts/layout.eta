@@ -485,8 +485,262 @@
                 outline: none;
                 text-decoration: none;
                 }
+
             /* Custom Case page styles*/
 
+            .phone-case-page-main-custom {
+              	width: 1100px;
+		        margin: 47px auto;
+                display: block;
+              	flex-direction: row;
+            	overflow: hidden;
+            	}            
+	    	.phone-case-page-main-custom .list-of-models {
+                color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                width: 204px;
+                padding: 10px 3px;
+                background-color: #F6F8FC;
+                float: left;
+                margin-top: 20px;
+		        }	
+		    .phone-case-page-main-custom .list-of-models-ul {
+		        color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                list-style: none;
+                padding: 0 19px;
+                display: block;
+                }	
+		    .phone-case-page-main-custom .list-of-models-ul li {
+		        color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                border: 0px;
+                margin: 0;
+                padding: 3px 0;
+                }	
+		    .list-of-models-ul > li > a{
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                color: #525e6e;
+                transition: color .3s;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                outline: none;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 14px 0;
+                display: inline-block;
+                font-size: 14px;
+                }
+		    .phone-case-page-main-custom .list-of-models-ul2 {
+		       color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                max-height: 400px;
+                transition: all .3s;
+                overflow: auto;
+                margin-bottom: 20px;
+                display: block;
+                }
+
+		    .phone-case-page-main-custom .list-of-models-ul2 a {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                color: #525e6e;
+                transition: color .3s;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                outline: none;
+                text-decoration: none;
+                }
+	    	.phone-case-page-main-custom .collection-of-products{
+                width: 870px;
+                float: right;
+                background-color: #F6F8FC;
+                margin-top: 20px;
+		        }
+		    .phone-case-page-main-custom .breadcrumbs {
+    			color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                font-size: 12px;
+                line-height: 1;
+                padding: 29px 30px 0 30px;
+		        }
+		    .phone-case-page-main-custom .breadcrumbs a {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-size: 12px;
+                line-height: 1;
+                list-style: none;
+                color: #525e6e;
+                transition: color .3s;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                outline: none;
+                text-decoration: none;
+                margin-right: 0;
+                }
+		    .phone-case-page-main-custom .breadcrumb1{
+			    color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-size: 12px;
+                line-height: 1;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                float: left;
+		    }
+		    .phone-case-page-main-custom .breadcrumb-ul {
+			    color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-size: 12px;
+                line-height: 1;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width:130px;
+		        }
+		    .phone-case-page-main-custom .breadcrumb-ul li {
+    			color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-size: 12px;
+                line-height: 1;
+                list-style: none;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                display: inline;
+                margin-right: 5px;
+		        }
+		    .phone-case-page-main-custom .breadcrumbs li {
+    		    margin-right: 5px;
+		        }
+		    .phone-case-page-main-custom .breadcrumbs .turnpage {
+		        color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-size: 12px;
+                line-height: 1;
+                text-align: center;
+                float: right;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                clear: none;
+                }		
+		    .phone-case-page-main-custom #plist {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width: 100%;
+                float: left;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: stretch;
+                font-size: 14px;
+                color: #24c985;
+                }
+		    .phone-case-page-main-custom #plist > li {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                font-size: 14px;
+                color: #24c985;
+                border: 0px;
+                margin: 0;
+                width: 250px;
+                float: left;
+                padding: 30px 0 0 30px;
+		        }
+		    .phone-case-page-main-custom #plist a {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                color: #525e6e;
+                transition: color .3s;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                outline: none;
+                text-decoration: none;
+                font-size: 13px;
+                display: block;
+		        }
+		    .phone-case-page-main-custom #plist img {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                color: #525e6e;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                font-size: 13px;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                vertical-align: top;
+                width: 100%;
+                margin-bottom: 5px;
+		        }
+		    .phone-case-page-main-custom .collection-of-products > .turnpage {
+		        color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                text-align: center;
+                clear: both;
+                padding: 50px 0;
+                }		
+		    .phone-case-page-main-custom .collection-of-products > .turnpage .pageNo {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                text-align: center;
+                color: #525e6e;
+                transition: color .3s;
+                cursor: pointer;
+                display: inline-block;
+                line-height: 2rem;
+                height: 2rem;
+                margin: 0 1rem;
+                font-size: 1rem;
+                -webkit-tap-highlight-color: transparent;
+                outline: none;
+                text-decoration: none;
+                }
+
+		    .phone-case-page-main-custom .collection-of-products >  .turnpage .currentPageNo {
+		        font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                text-align: center;
+                display: inline-block;
+                line-height: 2rem;
+                height: 2rem;
+                font-size: 1rem;
+                background-color: #24c985;
+                color: #fff;
+                width: 2em;
+                margin: 0 .35rem;
+                border-radius: 50%;
+                }
+		        .phone-case-page-main-custom .collection-of-products >  .turnpage .pageNext {
+		            font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                    text-align: center;
+                    color: #525e6e;
+                    transition: color .3s;
+                    cursor: pointer;
+                    display: inline-block;
+                    line-height: 2rem;
+                    height: 2rem;
+                    margin: 0 1rem;
+                    font-size: 1rem;
+                    -webkit-tap-highlight-color: transparent;
+                    outline: none;
+                    text-decoration: none;
+                }
             /* Contact Us page styles*/
             .phone-case-page-main-contact {
               	color: #2a2a2a;
@@ -540,7 +794,7 @@
                 width: 600px;
                 padding: 0 30px 50px;
                 }
-		    .phone-case-page-main-contact ul li input {
+		    .input-contact {
                 list-style: none;
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 font-size: 14px;
