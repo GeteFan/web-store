@@ -130,6 +130,12 @@
                 font-size: 16px;
             }
 
+            .sign-up-a :hover{
+                color: white;
+                background-color:black;
+                border: black;
+            }
+
             button:hover{
             border: 2px solid white; 
             background-color:black;
@@ -903,7 +909,7 @@
                 list-style: none;
 		        }
 		    #fs24 {
-                width: 150px;
+                width: 115px;
                 text-allign: center;
                 margin: 30px auto;
                 color: #2a2a2a;
