@@ -1,14 +1,13 @@
 <% layout("./layouts/layout.eta") %>
-<link rel="stylesheet" type="text/css" href="styles/layout-styles.css">
 
-	<div class="phone-case-page-main-main">
+<div class="phone-case-page-main-main">
 	<img src="layouts/styles/img/homePageImg.png" alt="Main page photo" id="homePageImg">
 		<div class="makeOwn">
 		<div id="makeOwn-text">
            	 <h2>Найзручніший<br> Красивий Захисний<br> Чохол</h2>
             	<p class="fs18">З двухшаровою будовою наші чохли можуть<br> похвастатись своєю міцністю, без жартів</p>
             	<a href="">Make Your Own</a>
-       		 </div>
+    </div>
 		<img src="layouts/styles/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
 		</div>
-	    </div>
+</div>
