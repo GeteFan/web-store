@@ -102,10 +102,13 @@
             .sign-up{
             display: block;
             display: flex;
-            margin: 23px;
+            padding-top: 8px;
             height: 40px;
             width: 100px;
             
+            }
+            sign-button {
+                text-wrap: nowrap;
             }
             button {
             background-color: buttonface;
@@ -841,7 +844,7 @@
             .phone-case-page-main-contact .btn_4 {
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 appearance: none;
-                margin: 35px 50%;
+                margin: 35px auto;
                 text-indent: 0;
                 outline: 0;
                 display: block;
@@ -958,7 +961,7 @@
             .phone-case-page-main-sign .btn_4 {
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 appearance: none;
-                margin: 0 auto;
+                margin: 50px auto;
                 text-indent: 0;
                 outline: 0;
                 display: block;
@@ -1002,7 +1005,7 @@
                 </div>
                 <div class='sign-up'>
                     <form method="GET" action="/sign"> 
-                        <button type="submit">Sign up</button>
+                        <button id="sign-button" type="submit">Sign up</button>
                     </form>
                 </div>
             </div>
