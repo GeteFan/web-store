@@ -1,13 +1,21 @@
 <% layout("./layouts/layout.eta") %>
 
 <div class="phone-case-page-main-main">
-	<img src="/layouts/styles/img/homePageImg.png" alt="Main page photo" id="homePageImg">
+	<img src="img/homePageImg.png" alt="Main page photo" id="homePageImg">
+  <img src="/img/homePageImg.png" alt="Main page photo" id="homePageImg">
+  <img src="./img/homePageImg.png" alt="Main page photo" id="homePageImg">
+  <img src="views/img/homePageImg2.png" alt="Main page photo" id="homePageImg">
+  <img src="img/homePageImg.png" alt="Main page photo" id="homePageImg">
 		<div class="makeOwn">
 		<div id="makeOwn-text">
            	 <h2>Найзручніший<br> Красивий Захисний<br> Чохол</h2>
             	<p class="fs18">З двухшаровою будовою наші чохли можуть<br> похвастатись своєю міцністю, без жартів</p>
             	<a href="">Make Your Own</a>
     </div>
-		<img src="/layouts/styles/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+		<img src=".store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src="./store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src="../store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src="/store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src=".store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
 		</div>
 </div>
