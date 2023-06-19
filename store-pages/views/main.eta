@@ -12,10 +12,10 @@
             	<p class="fs18">З двухшаровою будовою наші чохли можуть<br> похвастатись своєю міцністю, без жартів</p>
             	<a href="">Make Your Own</a>
     </div>
-		<img src=".store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
-    <img src="./store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
-    <img src="../store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
-    <img src="/store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
-    <img src=".store-pages/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+		<img src=".views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src="./views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src="../views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src="/views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
+    <img src=".views/img/homePageImg2.png" alt="Main page photo" id="homePageImg2">
 		</div>
 </div>
