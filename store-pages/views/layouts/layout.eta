@@ -121,7 +121,7 @@
             transform: translate(-50%, -50%);
             
             }
-            button a {
+            .sign-up-a {
                 text-decoration: none;
             }
 
@@ -772,7 +772,7 @@
                 padding: 0;
                 list-style: none;
 		        }
-		    .fs24 {
+		    .fs24 span{
                 color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 font-weight: bold;
@@ -897,7 +897,8 @@
                 padding: 0;
                 list-style: none;
 		        }
-		    .fs24 {
+		    .fs24 div {
+                width: 150px;
                 text-allign: center;
                 margin: 30px auto;
                 color: #2a2a2a;
@@ -990,7 +991,7 @@
                     </ul>
                 </div>
                 <div class='sign-up'>
-                    <button><a href="/sign" >Sign up</a></button>
+                    <button><a class="sign-up-a" href="/sign" >Sign up</a></button>
                 </div>
             </div>
   
