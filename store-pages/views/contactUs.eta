@@ -1,0 +1,25 @@
+<div class="phone-case-page-main-cotact">     
+    <div style="width:660px;margin:20px auto">
+        <div>
+            <p style="padding:30px" class="b">
+                <span class="fs24">Contact Us</span><br><br>
+
+                Якщо у вас виникли запитання, залиште нам повідомлення або зв'яжіться з нами, ми відповімо вам на проблеми протягом 24 годин!<br><br>
+       
+
+                Електронна адреса служби підтримки клієнтів:  <a href="">service@getcase.com</a>
+            </p>
+
+            <form method="post" action="/contactus/submit/" class="validate payform" style="width:600px;padding:0 30px 50px;" novalidate="novalidate">
+                <ul>
+                    <li><input name="contactUs.Name" type="text" required="" placeholder="Full Name" style="text-align:left;"></li>
+                    <li><input name="contactUs.Email" type="email" required="" data-rule-email="true" placeholder="Email Address" style="text-align:left;"></li>
+                    <li>
+                        <input type="text" name="contactUs.Msg" placeholder="Message" style="text-align:left;">
+                    </li>
+                </ul>
+                <button class="btn_4" type="button" style="width:200px" onclick="check()">Send</button>
+            </form>
+        </div>
+    </div>
+	    </div>

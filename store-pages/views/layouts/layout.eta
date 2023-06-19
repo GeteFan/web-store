@@ -145,7 +145,465 @@
             .content{
             display: inline;
             }
-            
+
+            /* Main page styles*/
+
+            .phone-case-page-main-main {
+              	    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 47px 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    min-height: 400px;
+            	}   
+		#homePageImg{
+			    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    color: #525e6e;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    border: 0px;
+    margin: 0;
+    padding-top: 20px;
+    vertical-align: top;
+		}   
+		.makeOwn{
+			width: 1000px;
+			margin: 0 auto;
+			display: flex;
+   			padding-top: 20px;
+		}
+		#makeOwn-text{
+			width:450px;
+			    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 20px 0 60px;
+    color: #000;
+		}
+		#makeOwn-text p{
+			     color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    text-align: center;
+    border: 0px;
+    margin: 0;
+    position: relative;
+			padding-top: 40px;
+			font-size: 17px;
+		}
+		#makeOwn-text a{
+			    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    text-align: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 20px;
+    background-color:  #C1EFFF;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: all .3s;
+			padding-top: 15px;
+			font-size: 14px;
+		}
+		#homePageImg2{
+			    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    color: #525e6e;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    width: 500px;
+    border: 0px;
+    vertical-align: top;
+		}   
+
+            /* Phone Case page styles*/
+
+            .phone-case-page-main-phone {
+              	width: 1100px;
+		margin: 47px auto;
+                display: block;
+              	flex-direction: row;
+            	overflow: hidden;
+            	}            
+	    	.list-of-models {
+		            color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    width: 204px;
+    padding: 10px 3px;
+    background-color: #F6F8FC;
+    float: left;
+    margin-top: 20px;
+		}	
+		.list-of-models-ul {
+		   color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    list-style: none;
+    padding: 0 19px;
+    display: block;
+}	
+		.list-of-models-ul li {
+		       color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    border: 0px;
+    margin: 0;
+    padding: 3px 0;
+}	
+		.list-of-models-ul > li > a{
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    color: #525e6e;
+    transition: color .3s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 14px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+		.list-of-models-ul2 {
+		       color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 400px;
+    transition: all .3s;
+    overflow: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+		.list-of-models-ul2 a {
+		           font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    color: #525e6e;
+    transition: color .3s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+	    	.collection-of-products{
+		    width: 870px;
+			float: right;
+		    background-color: #F6F8FC;
+		    margin-top: 20px;
+		}
+		.breadcrumbs {
+    			    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1;
+    padding: 29px 30px 0 30px;
+		}
+		.breadcrumbs a {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    list-style: none;
+    color: #525e6e;
+    transition: color .3s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+    margin-right: 0;
+}
+		.breadcrumb1{
+			    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    float: left;
+		}
+		.breadcrumb-ul {
+			    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	width:120px;
+		}
+		.breadcrumb-ul li {
+    			    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    list-style: none;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-right: 5px;
+		}
+		.breadcrumbs li {
+    		margin-right: 5px;
+		}
+		.breadcrumbs .turnpage {
+		        color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    clear: none;
+}		
+		#plist {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    font-size: 14px;
+    color: #24c985;
+		}
+		#plist > li {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    font-size: 14px;
+    color: #24c985;
+    border: 0px;
+    margin: 0;
+    width: 250px;
+    float: left;
+    padding: 30px 0 0 30px;
+		}
+		#plist a {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    color: #525e6e;
+    transition: color .3s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+		}
+		#plist img {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    color: #525e6e;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 13px;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 5px;
+		}
+		.collection-of-products > .turnpage {
+		            color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    text-align: center;
+    clear: both;
+    padding: 50px 0;
+}		
+		.collection-of-products > .turnpage .pageNo {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    text-align: center;
+    color: #525e6e;
+    transition: color .3s;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+		.collection-of-products >  .turnpage .currentPageNo {
+		    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    text-align: center;
+    display: inline-block;
+    line-height: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: #24c985;
+    color: #fff;
+    width: 2em;
+    margin: 0 .35rem;
+    border-radius: 50%;
+}
+		.collection-of-products >  .turnpage .pageNext {
+		       font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    text-align: center;
+    color: #525e6e;
+    transition: color .3s;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+            /* Custom Case page styles*/
+
+            /* Contact Us page styles*/
+            .phone-case-page-main-cotact {
+              	    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 47px 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    min-height: 400px;
+            	}   
+		div {
+		    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+		
+}
+	    .phone-case-page-main-cotact ul {
+		        color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+		}
+		.fs24 {
+		    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+		}
+		.phone-case-page-main-cotact ul li {
+			    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    list-style: none;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    float: left;
+    z-index: 2;
+		}
+		.validate payform {
+		        color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    width: 600px;
+    padding: 0 30px 50px;
+		}
+		input {
+		    list-style: none;
+    font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #2a2a2a;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    text-indent: 0;
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #C1C6D0;
+    transition: all .2s;
+    text-align: left;
+		}
+		#contactUsMsg {
+			    list-style: none;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+		}
+	    .btn_4 {
+		            font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    appearance: none;
+    margin: 4% 50%;
+    text-indent: 0;
+    outline: 0;
+    display: block;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+    border-radius: 22px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: bold;
+    vertical-align: middle;
+    transition: all .3s;
+    cursor: pointer;
+    border: 0 none;
+    color: #fff;
+    background-color: #606e82;
+    width: 200px;
+		}         
+            /* About Us page styles*/
+            .phone-case-page-main-about {
+		margin: 87px auto;
+              	width: 850px;
+                display: block;
+              	flex-direction: row;
+            	overflow: hidden;
+    color: #2a2a2a;
+    font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+font-weight: bold;
+    border: 0px;
+    padding: 0;
+            	}            
+	    	.page-title {
+		padding-bottom: 25px;
+		}
+
+
 
     </style>
   </head>
@@ -161,10 +619,10 @@
                 <div class='nav'>
                     <ul>
                     <li><a class="active" href="#home">Home</a></li>
-                    <li><a class="active" href="#news">Phone Case</a></li>
-                    <li><a class="active" href="#home">Custom Case</a></li>
-                    <li><a class="active" href="#contact">Contact Us</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a class="active" href="#phone-case">Phone Case</a></li>
+                    <li><a class="active" href="#custome-case">Custom Case</a></li>
+                    <li><a class="active" href="#contact-us">Contact Us</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li></li>
                     </ul>
                 </div>
