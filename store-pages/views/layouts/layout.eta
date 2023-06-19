@@ -123,6 +123,7 @@
             }
             .sign-up-a {
                 text-decoration: none;
+                padding: 5px 20px;
             }
 
             button:hover{
@@ -772,7 +773,7 @@
                 padding: 0;
                 list-style: none;
 		        }
-		    .fs24 span{
+		    .fs24 {
                 color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 font-weight: bold;
@@ -897,7 +898,7 @@
                 padding: 0;
                 list-style: none;
 		        }
-		    .fs24 div {
+		    #fs24 {
                 width: 150px;
                 text-allign: center;
                 margin: 30px auto;
