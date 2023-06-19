@@ -140,8 +140,8 @@
 
             button:hover{
             border: 2px solid black; 
-            background-color: white;
-            color: white;
+            background-color: #C1EFFF ;
+            color: black;
             
             }
 
@@ -1003,7 +1003,7 @@
                     </ul>
                 </div>
                 <div class='sign-up'>
-                    <form method="POST" action="/signIn"> 
+                    <form method="POST" action="/sign"> 
                         <button type="submit">Sign up</button>
                     </form>
                 </div>
