@@ -7,12 +7,12 @@
             <div id="fs24">Log In</div>
 
 
-            <form method="post" action="/contactus/submit/" class="validate payform" style="width:350px;padding:0 30px 50px;margin: 0 auto;" novalidate="novalidate">
+            <form method="post" action="/contactus/submit/" class="validate payform" style="width:350px;padding:0 30px 50px;margin: 0 auto;">
                 <ul>
-                    <li><input class="input-sign" name="contactUs.Name" type="text" required="" placeholder="Login" style="text-align:left;"></li>
-                    <li><input class="input-sign" name="contactUs.Email" type="password" required="" data-rule-email="true" placeholder="Password" style="text-align:left;"></li>
+                    <li><input class="input-sign" type="text" required="" placeholder="Login" style="text-align:left;"></li>
+                    <li><input class="input-sign" type="password" required="" data-rule-email="true" placeholder="Password" style="text-align:left;"></li>
                 </ul>
-                <button class="btn_4" type="button" style="width:200px" onclick="check()">Log In</button>
+                <button class="btn_4" type="submit" ">Log In</button>
             </form>
         </div>
     </div>

@@ -118,9 +118,7 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 12px;
-                margin: 0;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            margin: 0;
             
             }
             .sign-up-a {
@@ -840,7 +838,7 @@
                 margin: 0;
                 padding: 0;
                 }
-            .btn_4 {
+            .phone-case-page-main-contact .btn_4 {
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 appearance: none;
                 margin: 35px 50%;
@@ -957,10 +955,10 @@
                 transition: all .2s;
                 text-align: left;
                 }
-            .btn_4 {
+            .phone-case-page-main-sign .btn_4 {
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 appearance: none;
-                margin: 35px 50%;
+                margin: 0 auto;
                 text-indent: 0;
                 outline: 0;
                 display: block;
