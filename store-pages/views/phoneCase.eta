@@ -323,10 +323,10 @@
             			<div class="breadcrumb1">
 				<ul class="breadcrumb-ul">
 					<li typeof="v:Breadcrumb">
-					<a property="v:title" rel="v:url" title="HOME" href="https://www.styletify.com">HOME</a>::
+					<a property="v:title" rel="v:url" title="HOME" href="/">HOME</a>::
 					</li>
 					<li typeof="v:Breadcrumb">
-					<a property="v:title" rel="v:url" title="Phone Case" href="https://www.styletify.com/phone-case-c-48/">PhoneCase</a>
+					<a property="v:title" rel="v:url" title="Phone Case" href="/phoneCase">PhoneCase</a>
 					</li>
 				</ul>
 				</div>
