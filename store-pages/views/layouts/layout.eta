@@ -469,7 +469,7 @@
                 width: 2em;
                 margin: 0 .35rem;
                 border-radius: 50%;
-            }
+                }
 		    .collection-of-products >  .turnpage .pageNext {
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 text-align: center;
@@ -748,7 +748,7 @@
               	color: #2a2a2a;
                 font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 border: 0px;
-                margin: 67px 0;
+                margin: 47px 0;
                 padding: 0;
                 width: 100%;
                 background-color: #fff;
@@ -828,14 +828,14 @@
             .btn_4 {
                 font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
                 appearance: none;
-                margin: 4% 50%;
+                margin: 35px 50%;
                 text-indent: 0;
                 outline: 0;
                 display: block;
                 text-align: center;
                 height: 44px;
                 line-height: 44px;
-                padding-top: 10px;
+                padding: 0;
                 border-radius: 22px;
                 font-size: 14px;
                 box-sizing: border-box;
@@ -867,6 +867,113 @@
 		        padding-bottom: 25px;
 		    }
 
+            /* Sign In page styles */
+
+            .phone-case-page-main-contact {
+              	color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 47px 0;
+                padding: 0;
+                width: 100%;
+                background-color: #fff;
+                min-height: 400px;
+            	}   
+		    .phone-case-page-main-contact div {
+                color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                }
+	        .phone-case-page-main-contact ul {
+		        color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+		        }
+		    .fs24 {
+                color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+                }
+		    .phone-case-page-main-contact ul li {
+                color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                list-style: none;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                padding-bottom: 20px;
+                position: relative;
+                width: 100%;
+                float: left;
+                z-index: 2;
+                }
+            .validate payform {
+                color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                width: 600px;
+                padding: 0 30px 50px;
+                }
+		    .input-contact {
+                list-style: none;
+                font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                font-size: 14px;
+                color: #2a2a2a;
+                appearance: none;
+                border-radius: 0;
+                margin: 0;
+                text-indent: 0;
+                width: 100%;
+                height: 43px;
+                line-height: 43px;
+                padding: 0;
+                border: 0;
+                border-bottom: 1px solid #C1C6D0;
+                transition: all .2s;
+                text-align: left;
+                }
+		    #contactUsMsg {
+                list-style: none;
+                -webkit-user-modify: read-write;
+                overflow-wrap: break-word;
+                -webkit-line-break: after-white-space;
+                color: #2a2a2a;
+                font: 13px/1.5 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                border: 0px;
+                margin: 0;
+                padding: 0;
+                }
+            .btn_4 {
+                font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+                appearance: none;
+                margin: 35px 50%;
+                text-indent: 0;
+                outline: 0;
+                display: block;
+                text-align: center;
+                height: 44px;
+                line-height: 44px;
+                padding: 0;
+                border-radius: 22px;
+                font-size: 14px;
+                box-sizing: border-box;
+                font-weight: bold;
+                vertical-align: middle;
+                transition: all .3s;
+                cursor: pointer;
+                border: 0 none;
+                color: #fff;
+                background-color: #606e82;
+                width: 200px;
+                }  
+
     </style>
   </head>
   <body>
@@ -875,7 +982,7 @@
             <div class='wrap'>
                 <div class='logo'>
                     <img src="https://cdn-icons-png.flaticon.com/512/3159/3159614.png" style="width: 50px; padding-left: 20px; padding-right: 0px"/>
-                   <div class='logo-text'> <a class="active" href="">GetCase</a>
+                   <div class='logo-text'> <a class="active" href="/">GetCase</a>
                     </div>
                 </div>
                 <div class='nav'>
@@ -889,7 +996,7 @@
                     </ul>
                 </div>
                 <div class='sign-up'>
-                    <button>Sign up</button>
+                    <button><a href="/sign" >Sign up</a></button>
                 </div>
             </div>
   

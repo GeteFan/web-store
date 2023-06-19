@@ -8,7 +8,7 @@ import * as phoneCase2Controller from "./controllers/phoneCase2Controller.js";
 import * as customCaseController from "./controllers/customCaseController.js";
 import * as contactUsController from "./controllers/contactUsController.js";
 import * as aboutUsController from "./controllers/aboutUsController.js";
-
+import * as signInController from "./controllers/signInController.js";
 configure({
   views: `${Deno.cwd()}/views/`,
 });
@@ -24,6 +24,8 @@ const handleRequest = async (request) => {
     return await phoneCase2Controller.viewPhoneCase(request);
   } else if (url.pathname === "/customCase" && request.method === "GET") {
     return await customCaseController.viewCustomCase(request);
+  } else if (url.pathname === "/sign" && request.method === "GET") {
+    return await signInController.viewSignIn(request);
   } else if (url.pathname === "/contactUs" && request.method === "GET") {
     return await contactUsController.viewContactUs(request);
   } else if (url.pathname === "/aboutUs" && request.method === "GET") {
